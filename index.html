@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./resources/styles/styles.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          screens: {
+            sm: '480px',
+            md: '768px',
+            lg: '976px',
+            xl: '1440px',
+          },
+          extend: {
+            colors: {
+              clifford: '#da373d',
+              bgHero: '#fdf2e9',
+              btnPrimary: '#cf711f',
+            },
+            fontSize: {
+              medium: "1rem",
+              large: "1.5rem",
+              small: "1.2rem",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- ==== MAIN CONTENT ===== -->
+    <main>
+      <div class="container max-w-full bg-bgHero">
+        <!-- ==== HEADER ===== -->
+        <nav class="flex items-center justify-between md:px-16 px-8 py-8">
+          <div class="logo">
+            <img
+              src="./resources/img/omnifood-logo.png"
+              class="md:w-[250px] w-[200px]"
+              alt="logo"
+            />
+          </div>
+          <ul class="nav-link lg:flex hidden items-center gap-6">
+            <li class="capitalize text-xl"><a href="#">How it works</a></li>
+            <li class="capitalize text-xl"><a href="#">meals</a></li>
+            <li class="capitalize text-xl"><a href="#">testimonials</a></li>
+            <li class="capitalize text-xl"><a href="#">pricing</a></li>
+            <button
+              class="bg-btnPrimary text-white capitalize text-xl px-6 py-2 rounded-lg duration-200 ease-in-out hover:opacity-80"
+            >
+              try for free
+            </button>
+          </ul>
+          <button class="lg:hidden block">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </nav>
+        <!-- ==== HEADER ===== -->
+        <div class="hero md:px-16 px-8">
+          <article >
+            <!-- ====FLEX 1==== -->
+            <div>
+              <h1 class="lg:text-5xl text-3xl lg:text-left font-semibold lg:w-2/4 text-center">A healthy meal delivered to your door, every single day</h1>
+              <p class="text-center lg:text-left py-4 md:text-large text-small">
+                The smart 365-days-per-year food subscription that will make you
+                eat healthy again. Tailored to your personal tastes and
+                nutritional needs.
+              </p>
+              <div>
+                <button class="bg-btnPrimary px-3 text-white rounded-lg py-2 text-xl ">
+                  Start eating well
+                </button>
+              </div>
+            </div>
+            <!-- ====FLEX 2===== -->
+            <div></div>
+          </article>
+        </div>
+        <!-- ===== HERO SECTION ===== -->
+      </div>
+    </main>
+  </body>
+</html>
